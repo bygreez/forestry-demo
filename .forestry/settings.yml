@@ -6,6 +6,13 @@ webhook_url:
 sections:
 - type: heading
   label: qwer
+- type: directory
+  path: _projects
+  label: Projects
+  create: all
+  match: "*"
+  templates:
+  - project
 - type: heading
   label: Content
 - type: jekyll-posts
@@ -26,13 +33,6 @@ sections:
   match: "*"
   templates:
   - person
-- type: directory
-  path: _projects
-  label: Projects
-  create: all
-  match: "*"
-  templates:
-  - project
 - type: document
   path: _data/information.yml
   label: Contact Information
